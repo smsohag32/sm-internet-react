@@ -4,10 +4,10 @@ import { WifiIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
   return (
-    <header className="flex justify-between max-w-[1200px] mx-auto px-3 md:px-5 items-center h-20">
+    <header className="flex justify-between cs-container px-3 md:px-5 items-center h-20">
       <Link className="flex gap-1" to="/">
         <WifiIcon className="h-6 w-6 text-red-500" />
-        <span>sm internet</span>
+        <span className="italic uppercase">sm internet</span>
       </Link>
       <nav className="flex gap-5">
         <NavLink className="" to="/">

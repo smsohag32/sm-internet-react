@@ -8,3 +8,9 @@
 *{
   font-family: 'Oswald', sans-serif;
 }
+
+.cs-container{
+  width: full;
+  max-width: 1200px;
+  margin: 0 auto;
+}
