@@ -10,7 +10,7 @@ import Packages from "./components/Packages/Packages";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App></App>,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -25,5 +25,7 @@ const router = createBrowserRouter([
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode></React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router}></RouterProvider>
+  </React.StrictMode>
 );
