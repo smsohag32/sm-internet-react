@@ -7,7 +7,7 @@ const Header = () => {
     <header className="flex justify-between cs-container px-3 md:px-5 items-center h-20">
       <Link className="flex items-center gap-1" to="/">
         <Lottie className="w-20" animationData={wifi} loop={true}></Lottie>
-        <span className="italic uppercase">sm internet</span>
+        <span className="italic uppercase text-red-400">sm internet</span>
       </Link>
       <nav className="flex gap-5">
         <NavLink className="" to="/">

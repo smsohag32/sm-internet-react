@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Silver Package",
+    "speed": "20 Mbps",
+    "price": "BDT 650",
+    "validity": "30 days",
+    "benefits": ["Unlimited data usage", "24/7 customer support"]
+  },
+  {
+    "name": "Gold Package",
+    "speed": "30 Mbps",
+    "price": "BDT 1,000",
+    "validity": "30 days",
+    "benefits": [
+      "Unlimited data usage",
+      "24/7 customer support",
+      "Free installation",
+      "Free WiFi router"
+    ]
+  },
+  {
+    "name": "Platinum Package",
+    "speed": "50 Mbps",
+    "price": "BDT 1,500",
+    "validity": "30 days",
+    "benefits": [
+      "Unlimited data usage",
+      "24/7 customer support",
+      "Free installation",
+      "Free WiFi router",
+      "Dedicated bandwidth"
+    ]
+  },
+  {
+    "name": "Diamond Package",
+    "speed": "100 Mbps",
+    "price": "BDT 2,500",
+    "validity": "30 days",
+    "benefits": [
+      "Unlimited data usage",
+      "24/7 customer support",
+      "Free installation",
+      "Free WiFi router",
+      "Dedicated bandwidth"
+    ]
+  }
+]
