@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import user from "./isp.json";
+import Packages from "../Packages/Packages";
 const Home = () => {
   return (
     <div className="">
@@ -16,6 +17,9 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet.</p>
           <button className="btn btn-primary">Get connection</button>
         </div>
+      </div>
+      <div>
+        <Packages />
       </div>
     </div>
   );
