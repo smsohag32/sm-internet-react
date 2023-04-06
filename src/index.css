@@ -14,3 +14,10 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.primary-text{
+  color: #ef7c81;
+}
+.primary-color{
+  background: #232f3e;
+}

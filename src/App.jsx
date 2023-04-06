@@ -7,13 +7,15 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
-      <div>
+      <div className="bg-[#242733]">
         <Header></Header>
       </div>
       <div className="min-h-[calc(100vh-240px)]">
         <Outlet></Outlet>
       </div>
-      <Footer></Footer>
+      <div className="primary-color">
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
