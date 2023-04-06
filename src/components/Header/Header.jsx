@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { WifiIcon } from "@heroicons/react/24/solid";
-
+import wifi from "./Ani/wifi.json";
+import Lottie from "lottie-react";
 const Header = () => {
   return (
     <header className="flex justify-between cs-container px-3 md:px-5 items-center h-20">
-      <Link className="flex gap-1" to="/">
-        <WifiIcon className="h-6 w-6 text-red-500" />
+      <Link className="flex items-center gap-1" to="/">
+        <Lottie className="w-20" animationData={wifi} loop={true}></Lottie>
         <span className="italic uppercase">sm internet</span>
       </Link>
       <nav className="flex gap-5">
