@@ -1,5 +1,5 @@
 [
-  {
+  { "id": "1",
     "name": "Silver Package",
     "speed": "20 Mbps",
     "price": "BDT 650",
@@ -7,6 +7,7 @@
     "benefits": ["Unlimited data usage", "24/7 customer support"]
   },
   {
+    "id": "2",
     "name": "Gold Package",
     "speed": "30 Mbps",
     "price": "BDT 1,000",
@@ -19,6 +20,7 @@
     ]
   },
   {
+    "id": "3",
     "name": "Platinum Package",
     "speed": "50 Mbps",
     "price": "BDT 1,500",
@@ -32,6 +34,7 @@
     ]
   },
   {
+    "id": "4",
     "name": "Diamond Package",
     "speed": "100 Mbps",
     "price": "BDT 2,500",

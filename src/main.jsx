@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Packages from "./components/Packages/Packages";
 import Services from "./components/Services/Services";
 import Blogs from "./components/Blogs/Blogs";
+import GetConnection from "./components/GetConnection/GetConnection";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
         element: <Packages />,
         loader: () => fetch("packages.json"),
       },
+
       {
         path: "services",
         element: <Services></Services>,
@@ -32,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "blogs",
         element: <Blogs></Blogs>,
+      },
+      {
+        path: "packages/:packageId",
+        element: <GetConnection />,
+        loader: () => fetch("packages.json"),
       },
     ],
   },
