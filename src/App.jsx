@@ -23,7 +23,7 @@ function App() {
         className={`sticky z-40 top-0 ${
           isScroll
             ? "bg-[#242733] text-white transform duration-300"
-            : "bg-transparent text-black transform duration-150"
+            : "bg-white bg-opacity-40 text-black transform duration-150"
         }`}
       >
         <Header></Header>

@@ -4,14 +4,14 @@ import wifi from "./Ani/wifi.json";
 import Lottie from "lottie-react";
 const Header = () => {
   return (
-    <header className="flex justify-between cs-container px-3 md:px-5 items-center h-20">
+    <header className=" static md:flex md:justify-between cs-container px-3 md:px-5 z-50 items-center h-20">
       <Link className="flex items-center gap-1" to="/">
         <Lottie className="w-20" animationData={wifi} loop={true}></Lottie>
         <span className=" uppercase primary-text text-2xl font-extrabold">
-          Sm<span className="text-white">Internet</span>
+          Sm<span className="">Internet</span>
         </span>
       </Link>
-      <nav className="flex gap-5">
+      <nav className="flex flex-col md:flex-row gap-5 primary-color md:bg-transparent md:static absolute p-8 h-screen md:h-auto  top-20 left-0 right-0 ">
         <NavLink
           className={({ isActive }) => isActive && "primary-text"}
           to="/"
