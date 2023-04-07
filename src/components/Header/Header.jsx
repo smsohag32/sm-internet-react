@@ -32,34 +32,41 @@ const Header = () => {
         }`}
       >
         <NavLink
-          className={`hover:text-red-400 ${({ isActive }) =>
-            isActive && "primary-text"}`}
+          className={({ isActive }) =>
+            isActive ? "primary-text hover:text-red-400" : "hover:text-red-400"
+          }
           to="/"
         >
           Home
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "primary-text" : "hover:primary-text"
+            isActive ? "primary-text hover:text-red-400" : "hover:text-red-400"
           }
           to="/packages"
         >
           Packages
         </NavLink>
         <NavLink
-          className={({ isActive }) => isActive && "primary-text"}
+          className={({ isActive }) =>
+            isActive ? "primary-text hover:text-red-400" : "hover:text-red-400"
+          }
           to="/services"
         >
           Services
         </NavLink>
         <NavLink
-          className={({ isActive }) => isActive && "primary-text"}
+          className={({ isActive }) =>
+            isActive ? "primary-text hover:text-red-400" : "hover:text-red-400"
+          }
           to="/blogs"
         >
           Blogs
         </NavLink>
         <NavLink
-          className={({ isActive }) => isActive && "primary-text"}
+          className={({ isActive }) =>
+            isActive ? "primary-text hover:text-red-400" : "hover:text-red-400"
+          }
           to="/contact"
         >
           Contact us
