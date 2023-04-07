@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import wifi from "./Ani/wifi.json";
 import Lottie from "lottie-react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className=" static md:flex md:justify-between cs-container px-3 md:px-5 z-50 items-center h-20">
       <div className="flex justify-between items-center">
@@ -13,9 +14,23 @@ const Header = () => {
             Sm<span className="">Internet</span>
           </span>
         </Link>
-        <BeakerIcon className="h-6 w-6 text-blue-500" />
+        <div className="md:hidden">
+          <span onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? (
+              <XMarkIcon className="h-8 w-8 mr-5 text-blue-500" />
+            ) : (
+              <Bars3BottomRightIcon className="h-8 w-8 mr-5 text-blue-500" />
+            )}
+          </span>
+        </div>
       </div>
-      <nav className="flex flex-col md:flex-row gap-5 primary-color md:bg-transparent md:static absolute p-8 h-screen md:h-auto  top-20 left-0 right-0 ">
+      <nav
+        className={`flex flex-col md:flex-row gap-5 primary-color md:bg-transparent md:static absolute p-8 h-screen md:h-auto left-0 right-0 ${
+          isOpen
+            ? "top-20 duration-500"
+            : "hidden md:flex transform duration-500"
+        }`}
+      >
         <NavLink
           className={`hover:text-red-400 ${({ isActive }) =>
             isActive && "primary-text"}`}
