@@ -8,14 +8,14 @@ import Ads from "./components/Ads/Ads";
 function App() {
   const [isScroll, setIsScroll] = useState(false);
 
-  const changleColor = () => {
+  const changeColor = () => {
     if (window.scrollY >= 90) {
       setIsScroll(true);
     } else {
       setIsScroll(false);
     }
   };
-  window.addEventListener("scroll", changleColor);
+  window.addEventListener("scroll", changeColor);
   return (
     <div>
       <Ads></Ads>
@@ -23,7 +23,7 @@ function App() {
         className={`sticky z-40 top-0 ${
           isScroll
             ? "bg-[#242733] text-white transform duration-300"
-            : "bg-white bg-opacity-40 text-black transform duration-150"
+            : " bg-gradient-to-r from-gray-900 to-blue-500 text-white transform duration-150"
         }`}
       >
         <Header></Header>

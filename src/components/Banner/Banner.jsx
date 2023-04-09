@@ -3,7 +3,7 @@ import image from "./reretewt.png";
 
 const Banner = () => {
   return (
-    <div className=" relative bg-opacity-25 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div className=" relative bg-[url('/f.png')] bg-origin-content bg-opacity-50 bg-gray-700 bg-blend-multiply">
       <div className="flex flex-col py-48 px-10 md:flex-row justify-center items-center cs-container">
         <div></div>
         <div className="w-full flex flex-col gap-5">

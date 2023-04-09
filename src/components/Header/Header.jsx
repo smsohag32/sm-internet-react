@@ -17,15 +17,15 @@ const Header = () => {
         <div className="md:hidden">
           <span onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <XMarkIcon className="h-8 w-8 mr-5 text-blue-500" />
+              <XMarkIcon className="h-8 w-8 mr-5 text-white" />
             ) : (
-              <Bars3BottomRightIcon className="h-8 w-8 mr-5 text-blue-500" />
+              <Bars3BottomRightIcon className="h-8 w-8 mr-5 text-white" />
             )}
           </span>
         </div>
       </div>
       <nav
-        className={`flex flex-col md:flex-row gap-5 primary-color md:bg-transparent md:static absolute p-8 h-screen md:h-auto left-0 right-0 ${
+        className={`flex flex-col md:flex-row gap-5 primary-color md:bg-transparent md:static absolute p-8 h-screen md:h-auto left-0 right-[60%] duration-700 ${
           isOpen
             ? "top-20 duration-500"
             : "hidden md:flex transform duration-500"
